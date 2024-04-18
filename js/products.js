@@ -1,5 +1,5 @@
 import data from "./fetch_data.js";
-import { productListTmpl } from "./templates/templates.js";
+import { productListTmpl } from "./templates/templates_lists.js";
 
 
 

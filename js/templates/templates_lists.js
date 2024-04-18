@@ -1,4 +1,4 @@
-export const productListTmpl = (product) => 
+export const productListTmpl = (product) =>
 
     `
     <p><b>${product.title}</b></p>
@@ -9,3 +9,4 @@ export const productListTmpl = (product) =>
     <br>
 
     `;
+
