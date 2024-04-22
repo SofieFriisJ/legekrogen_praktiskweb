@@ -1,22 +1,43 @@
 
-const components = () => {}
+
+
+const components = {}
 
 /* NAV */
-components.nav = () => {
+components.nav = {
 
-    return `
-        <p>Nav Maria</p>
-    `;
+    init : () => {
+
+      
+        let navContainer = document.querySelector('nav')
+        console.log('Hello', components.nav.tmpl, navContainer)
+
+        if(navContainer){
+
+
+            let tmpl = `<p>Nav</p>`
+
+            navContainer.insertAdjacentHTML('beforeend', tmpl)
+        
+        }
+
+    }
 
 }
-    
-let navContainer = document.querySelector('nav')
-navContainer.insertAdjacentHTML('beforeend', components.nav())
+
+
+  
+
+
+
+
+
 
 
 
 
 /* FOOTER */
+/* 
 components.footer = () => {
 
     return `
@@ -31,5 +52,8 @@ footerContainer.insertAdjacentHTML('beforeend', components.footer())
 
 
 
+
+
+*/
 
 export default components;

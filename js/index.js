@@ -8,12 +8,17 @@ const app = {}
 
 app.init = async () => {
 
+    /*  UDSKRIVER HTML KOMPONENTER */    
+    //components()
+
+    components.nav.init();
+
+    
+
 
     /* UDSKRIVER PRODUKT-LISTE */
     await products()
 
-    /*  UDSKRIVER HTML KOMPONENTER */    
-    components()
 
 
     }
