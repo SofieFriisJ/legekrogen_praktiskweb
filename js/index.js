@@ -1,6 +1,6 @@
-import { products } from "./products.js";
 import components from "./templates/templates_components.js";
-
+import products from "./products.js";
+import search from "./search.js";
 
 
 
@@ -8,17 +8,13 @@ const app = {}
 
 app.init = async () => {
 
-    /*  UDSKRIVER HTML KOMPONENTER */    
-    //components()
-
-    components.nav.init();
-
     
+    components()
 
+    await products.list()
+    await products.recommendedList()
 
-    /* UDSKRIVER PRODUKT-LISTE */
-    await products()
-
+    await search()
 
 
     }
